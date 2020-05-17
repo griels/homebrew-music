@@ -2,23 +2,23 @@ require 'addressable/uri'
 
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
-cask 'steinberg-cubase-pro-9v5' do
-  version '9.5.0'
+cask 'steinberg-cubase-pro-10v5' do
+  version '10.5.0'
   sha256 'b7a6fe2cb0ba266bb0827977298046ec8f1bf64017299c310ddaa7bf96496e4c'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/Steinberg/Cubase_9.5_Installer_mac.dmg")
-  name 'Steinberg Cubase Pro 9.5'
+  url Addressable::URI.encode("file://#{base_dir}/Steinberg/Cubase_10.5_Installer_mac.dmg")
+  name 'Steinberg Cubase Pro 10.5'
   homepage 'https://www.steinberg.net/en/products/cubase'
 
-  pkg 'Cubase for Mac/Cubase 9.5.pkg'
+  pkg 'Cubase for Mac/Cubase 10.5.pkg'
 
   uninstall pkgutil: [
                        'com.steinberg.*.cubase95',
                        'com.steinberg.AcousticAgentSEMixer',
                        'com.steinberg.AcousticAgentSEPatternBanks',
                        'com.steinberg.AcousticAgentSEStyleFiles',
-                       'com.steinberg.Cubase9v5',
+                       'com.steinberg.Cubase10v5',
                        'com.steinberg.Documentation.hsse3',
                        'com.steinberg.Documentation.retrologue',
                        'com.steinberg.GrooveAgentFamily-SubPresetsShared',
@@ -55,9 +55,9 @@ cask 'steinberg-cubase-pro-9v5' do
                      ]
 
   zap delete: [
-                '~/Library/Caches/com.steinberg.cubase9v5',
-                '~/Library/Preferences/Application Files/Cubase 9.5',
-                '~/Library/Preferences/com.steinberg.cubase9v5.plist',
-                '~/Library/Preferences/Cubase 9.5',
+                '~/Library/Caches/com.steinberg.cubase10v5',
+                '~/Library/Preferences/Application Files/Cubase 10.5',
+                '~/Library/Preferences/com.steinberg.cubase10v5.plist',
+                '~/Library/Preferences/Cubase 10.5',
               ]
 end
