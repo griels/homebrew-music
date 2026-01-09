@@ -7,7 +7,7 @@ cask 'u-he-satin' do
   sha256 '054a168daf4f4e8a85e2bf7bc374dcfda861d1e677e9b9f054326fe43ce0d3f5'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/u-he/Satin_#{version.before_comma.no_dots}_#{version.after_comma}_Mac.zip")
+  url Addressable::URI.encode("https://dl.u-he.com/releases/Satin_133_15721_Mac.zip")
   name 'u-he Satin'
   homepage 'https://u-he.com/products/satin/'
 
