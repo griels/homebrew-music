@@ -3,7 +3,7 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'u-he-satin' do
-  version '1.3.1,7414'
+  version '1.3.3,15721'
   sha256 '324e2f68168aed4341bd333fade54a23888d621e7406039c55d7596fa7f2a8b3'
 
   # :base_dir was verified as official when first introduced to the cask
